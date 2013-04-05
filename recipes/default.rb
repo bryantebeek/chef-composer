@@ -21,9 +21,7 @@
 include_recipe "php"
 
 # Install curl
-package "curl" do
-    action :install
-end
+package "curl"
 
 # Install Composer
 bash "composer" do
