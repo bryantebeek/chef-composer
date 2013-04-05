@@ -7,6 +7,7 @@ Requirements
 
 #### packages
 - `php` - Composer runs using PHP.
+- `curl` - Composer is installed using curl.
 
 Attributes
 ----------

@@ -17,6 +17,14 @@
 # limitations under the License.
 #
 
+# Composer won't work without PHP
+include_recipe "php"
+
+# Install curl
+package "curl" do
+    action :install
+end
+
 # Install Composer
 bash "composer" do
   code "curl -s https://getcomposer.org/installer | php && sudo mv composer.phar #{node['composer']['bin']}"
